@@ -1,14 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./font-awesome/css/all.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
     <title>Portfolio Page</title>
-</head>
-<body>
-    
-    
-</body>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#" class="navbar__link">About</a>
+      <a href="#projects" class="navbar__link">Work</a>
+      <a href="#contact" class="navbar__link">Contact</a>
+    </nav>
+    <section id="welcome-section">
+      <h1>Hey, I am Stephan</h1>
+      <p>a web developer</p>
+    </section>
+    <section id="projects">
+      <div class="main-container">
+        <h2>These are some of my projects</h2>
+        <div class="flexbox" id="projects-container">
+          <a
+            href="https://www.hivomedia.de/challenges/tribute-page"
+            target="_blank"
+          >
+            <article class="project-tile">
+              <div class="image-container">
+                <img src="./images/tribute.jpg" alt="tribute-page image" />
+              </div>
+              <h3>Tribute Page</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="project-tile">
+              <div class="image-container">
+                <img
+                  src="./images/random-quote-machine.png"
+                  alt="tribute-page image"
+                />
+              </div>
+              <h3>Random Quote machine</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="project-tile">
+              <div class="image-container">
+                <img src="./images/calc.png" alt="tribute-page image" />
+              </div>
+              <h3>Javscript Calculator</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="project-tile">
+              <div class="image-container">
+                <img src="./images/map.jpg" alt="tribute-page image" />
+              </div>
+              <h3>Map Data Across the Globe</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="project-tile">
+              <div class="image-container">
+                <img src="./images/wiki.png" alt="tribute-page image" />
+              </div>
+              <h3>Wikipedia Viewer</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="project-tile">
+              <div class="image-container">
+                <img src="./images/tic-tac-toe.png" alt="tribute-page image" />
+              </div>
+              <h3>Tic Tac Toe Game</h3>
+            </article>
+          </a>
+        </div>
+        <div class="flexbox">
+          <button id="show-all-btn">Show all<span> ></span></button>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="main-container">
+        <h2>Let's work together ...</h2>
+        <p>How do you take your coffee?</p>
+        <div class="flexbox" id="contacts-container">
+          <a href="#" class="contact-container">
+            <i class="fab fa-facebook-square"></i>
+            <p>Facebook</p>
+          </a>
+          <a href="#" class="contact-container">
+            <i class="fab fa-github"></i>
+            <p>Github</p>
+          </a>
+          <a href="#" class="contact-container">
+            <i class="fab fa-twitter"></i>
+            <p>Twitter</p>
+          </a>
+          <a href="#" class="contact-container">
+            <i class="fas fa-at"></i>
+            <p>Send a mail</p>
+          </a>
+          <a href="#" class="contact-container">
+            <i class="fas fa-mobile-alt"></i>
+            <p>Call Me</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="main-container" id="footer-container">
+        <div>
+          **This is just a fake portfolio. All the projects and contact details
+          given are not real.
+        </div>
+        <div>&copy; Created for FreeCodeCamp</div>
+      </div>
+    </footer>
+  </body>
 </html>
